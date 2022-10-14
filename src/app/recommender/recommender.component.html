@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="left-container">
+        <div class="left-content">
+            <div class="header">Choose your favorite movie:</div>
+            <br>
+            <mat-form-field appearance="fill">
+                <mat-label>Favorite Movie</mat-label>
+                <mat-select>
+                  <mat-option *ngFor="let movie of movies" [value]="movie" (click)="selectMovie(movie)">
+                    {{movie.title}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <div>
+              Chosen Genres: {{chosenGenres}}
+              </div>
+        </div>
+    </div>
+    <div class="right-container">
+        <div class="right-content">
+            
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                <ng-container matColumnDef="title">
+                    <th mat-header-cell *matHeaderCellDef> TITLE </th>
+                    <td mat-cell *matCellDef="let book"> {{book.title}} </td>
+                    </ng-container>
+                
+                    <ng-container matColumnDef="author">
+                    <th mat-header-cell *matHeaderCellDef> Author </th>
+                    <td mat-cell *matCellDef="let book"> {{book.author}} </td>
+                    </ng-container>
+                
+                    <ng-container matColumnDef="genres">
+                    <th mat-header-cell *matHeaderCellDef> Genres </th>
+                    <td mat-cell *matCellDef="let book"> {{book.genres}} </td>
+                    </ng-container>
+            
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+
+        </div>
+    </div>
+</div>

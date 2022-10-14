@@ -1,0 +1,31 @@
+<div class="container">
+    <div id="chart">
+        <span>Movie Genres Present</span>
+        <apx-chart
+        [series]="movieChartOptions.series"
+        [chart]="movieChartOptions.chart"
+        [labels]="movieChartOptions.labels"
+        [responsive]="movieChartOptions.responsive"
+        ></apx-chart>
+    </div>
+    
+    <div id="chart">
+        <span>Book Genres Present</span>
+        <apx-chart
+        [series]="bookChartOptions.series"
+        [chart]="bookChartOptions.chart"
+        [labels]="bookChartOptions.labels"
+        [responsive]="bookChartOptions.responsive"
+        ></apx-chart>
+    </div>
+
+    <div id="chart">
+        <span>Actual Recommendations by Genre</span>
+        <apx-chart
+        [series]="logChartOptions.series"
+        [chart]="logChartOptions.chart"
+        [labels]="logChartOptions.labels"
+        [responsive]="logChartOptions.responsive"
+        ></apx-chart>
+    </div>
+  </div>

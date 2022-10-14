@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+}
+
+.left-container {
+    width: 25%;
+    border-style: groove;
+    min-height: 32.5rem;
+    max-height: 32.5rem;
+}
+.right-container {
+    width: 75%;
+    border-style: groove;
+    min-height: 32.5rem;
+    max-height: 32.5rem;
+}
+
+.header {
+    font-size: 20px;
+}
+
+.left-content {
+    min-height: 32.5rem;
+    max-height: 32.5rem;
+    word-wrap: break-word;
+    padding: 2rem;
+}
+.right-content {
+    min-height: 30rem;
+    max-height: 30rem;
+    overflow: auto;
+}
+
+.mat-elevation-z8 {
+    width: 100%;
+}

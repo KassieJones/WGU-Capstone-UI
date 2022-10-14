@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+}
+
+.left-container {
+    width: 50%;
+    border-style: groove;
+    min-height: 32.5rem;
+    max-height: 32.5rem;
+}
+.right-container {
+    width: 50%;
+    border-style: groove;
+    min-height: 32.5rem;
+    max-height: 32.5rem;
+}
+
+.header {
+    font-size: 20px;
+}
+
+.left-content {
+    min-height: 32.5rem;
+    max-height: 32.5rem;
+    word-wrap: break-word;
+    padding: 2rem;
+}
+.right-content {
+    min-height: 32.5rem;
+    max-height: 32.5rem;
+    padding-left: 5rem;
+}
